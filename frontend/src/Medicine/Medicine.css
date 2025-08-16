@@ -1,0 +1,77 @@
+/* Fix carousel image size */
+.carousel-img-fixed {
+  height: 300px;
+  object-fit: cover;
+}
+.carousel-img-size-fixed {
+  height: 150px;
+  object-fit: cover;
+}
+
+
+/* medicine css start here */
+
+.icon-img {
+  width: 50px;   /* icon size */
+  height: 50px;
+  object-fit: contain;
+}
+
+.card-custom {
+  background-color: rgb(204, 236, 246); /* light background for better contrast */
+  border: 1px solid #dee2e6; /* subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.646); /* slight shadow for depth */
+}
+
+.card-custom-2 {
+  background-color: lightyellow; /* light background for better contrast */
+  border: 1px solid #dee2e6; /* subtle border */
+  box-shadow: 0 2px 4px rgba(22, 1, 1, 0.646); /* slight shadow for depth */
+}
+
+.card-custom-3 {
+  background-color: rgb(246, 163, 163); /* light background for better contrast */
+  border: 1px solid #dee2e6; /* subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.646); /* slight shadow for depth */
+}
+
+.card-custom-4 {
+  background-color: rgb(200, 190, 223); /* light background for better contrast */
+  border: 1px solid #dee2e6; /* subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.646); /* slight shadow for depth */
+}
+.card-custom-5 {
+  background-color: rgb(182, 241, 182); /* light background for better contrast */
+  border: 1px solid #dee2e6; /* subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.646); /* slight shadow for depth */
+}
+
+.card-custom:hover {
+  background-color: #90c3f6; /* darker blue on hover */
+  transform: scale(1.15); /* slight zoom for whole div */
+}
+
+.card-custom-2:hover {
+  background-color: #b6cee6; /* darker yellow on hover */
+  transform: scale(1.15); /* slight zoom for whole div */
+}
+.card-custom-3:hover {
+  background-color:  #96c5f5; /* darker red on hover */
+  transform: scale(1.15); /* slight zoom for whole div */
+}
+.card-custom-4:hover {
+  background-color:  #81afdd; /* darker purple on hover */ 
+  transform: scale(1.15); /* slight zoom for whole div */
+}
+
+.card-custom-5:hover {
+  background-color:  #99c9f9; /* darker green on hover */
+  transform: scale(1.15); /* slight zoom for whole div */
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(20, 150, 55, 0.25);
+  transform: translateY(-15px);
+  border: 1px solid #0e1114;
+  transition: all 0.5s ease;
+}

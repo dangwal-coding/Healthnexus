@@ -1,0 +1,5 @@
+.doctor-main-wrapper .doctor-page-navbar,
+.doctor-main-wrapper .doctor-page-footer {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}

@@ -1,0 +1,124 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+.btn-primary:hover {
+  background-color: #5855eb;
+  border-color: #5855eb;
+}
+
+.bg-primary {
+  background-color: #6366f1 !important;
+}
+
+.text-primary {
+  color: #6366f1 !important;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-text {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.form-control {
+  border-color: #d1d5db;
+}
+
+.form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.btn-outline-secondary {
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #6b7280;
+}
+
+.text-warning {
+  color: #f59e0b !important;
+}
+
+
+                                                           /*Appointment page styles*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+.btn-primary:hover {
+  background-color: #5855eb;
+  border-color: #5855eb;
+}
+
+.bg-primary {
+  background-color: #6366f1 !important;
+}
+
+.text-primary {
+  color: #6366f1 !important;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-text {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.form-control {
+  border-color: #d1d5db;
+}
+
+.form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.btn-outline-secondary {
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #6b7280;
+}
+
+.text-warning {
+  color: #f59e0b !important;
+}
+
+
+

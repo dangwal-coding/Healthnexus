@@ -1,0 +1,7 @@
+.card {
+  border: none !important;
+  transition: none !important;
+  transform: none !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}

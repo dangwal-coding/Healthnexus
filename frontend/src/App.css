@@ -1,0 +1,286 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+                                                                 /* /Home page styles/ */
+.schedule-appointment{
+  background-image: url(./assets/images/banner.jpg);
+  width: 100%;
+  background-size: cover;
+}
+/* Search Bar Custom Styles */
+.search-container {
+  border: 2px solid #e0e0e0 !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(11, 138, 163, 0.1) !important;
+}
+
+.search-container:hover {
+  border-color: #0b8aa3ff !important;
+  box-shadow: 0 4px 15px rgba(11, 138, 163, 0.2) !important;
+}
+
+.search-container:focus-within {
+  border-color: #0b8aa3ff !important;
+  box-shadow: 0 0 0 3px rgba(11, 138, 163, 0.1) !important;
+}
+
+.search-icon {
+  color: #0b8aa3ff;
+  font-size: 20px;
+}
+
+.search-input::placeholder {
+  color: #666;
+  opacity: 0.8;
+}
+
+/* Find doctor card on home page */
+.find-doc:hover {              
+transform: scale(1.02);
+transition: 0.3s ease;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.find-doc:hover img {
+transform: scale(1.02);
+transition: 0.3s ease;
+}
+
+.find-doc:hover h6 {
+color: #0d6efd; /* Bootstrap primary */
+}
+
+/* /Home page styles end/ */
+
+/* ---------------------------FAQ_SECTION_CSS----------------------------- */
+
+.accordion-item{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px gray;
+}
+.accordion-item:hover{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgb(40, 39, 39);
+}
+.faq-que-heading{
+  margin-bottom: 20px;
+}
+.faq-image{
+width: 100%;
+}
+
+
+/* -------------------------Patient_review_seciton ---------------------------------- */
+
+.patient-review-section{
+     background: linear-gradient(55deg, lightblue, transparent);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 3px #72aaaaf5;
+}
+.consultation-button{
+  background-color: rgb(11, 138, 163);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  border: white;
+  box-shadow: 4px 4px 4px rgb(147, 145, 145);
+}
+.consultation-button:hover{
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  color: rgb(11, 138, 163);
+  border: 2px solid rgb(11, 138, 163);
+  box-shadow: 4px 4px 4px rgb(147, 145, 145);
+}
+.patient-review-section-cards{
+  max-height: 40vh;
+  overflow: scroll;
+}
+.review-card-head{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-top:2px ;
+  padding-bottom:2px ;
+}
+
+.departments-bg {
+  background-image: url(./assets/images/facalities-back-img.png);
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.department-card {
+  width: 180px;
+  border-radius: 12px;
+  border: 1px solid #dbe3ec;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.department-card:hover {
+  transform: translateY(-10px);
+}
+
+.department-card .icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.department-card .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.active-card {
+  color: white;
+  border: none;
+}
+
+.active-card .icon {
+  color: white;
+}
+.facalities-card-img{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.facalities-a-tag{
+text-decoration: none;
+color: rgb(10, 149, 195);
+}
+
+
+/* ----------------------Login/signup button------------------------- */
+.login-button{
+transition: transform 0 ease
+}
+.login-button:hover{
+ scale: 1.1;
+}
+
+/* --------------------------------Top-1-Bone---------------------------------------- */
+.marque-img{
+  height: 180px;
+}
+.right-globe{
+   height: 250px;
+   float: right;
+}
+
+
+
+                                                               /*Chatbot styles*/
+.chat-container{
+    position: fixed;
+    width:300px;
+    bottom:90px;
+   right:20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:0 8px 16px rgba(0,0,0,0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header{
+    background-color: #007bff;
+    font-weight: bold;
+    padding: 10px;
+    background: #007bff;
+    color:#fff;
+    text-align: center;
+  }
+  .bot-icon{
+   bottom:20px;
+   right:20px;
+   position:fixed;
+   width: 60px;
+   height: 60px;
+   cursor:pointer;
+   z-index:999;
+  }
+  .bot-icon img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .chat-body{
+    max-height: 300px;
+    flex:1;
+    padding:10px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+  }
+  .chat-message.user{
+    background-color: #007bff;
+    color: white;
+   padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  .chat-message.bot{
+    background: #e4e6eb;
+     padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    max-width: 80%;
+  }
+  .chat-footer{
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+  }
+  .chat-footer input{
+    flex:1;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+  }
+  .chat-footer button{
+    padding:8px 12px;
+    background: #007bff;
+    color:#fff;
+    border:none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor:pointer;
+    margin-left: 5px;
+  }
+  .chat-body::-webkit-scrollbar{
+    display: none;  
+  }
+  
+  /* Chatbot container */
+  .chat-container {
+    z-index: 1100; /* Higher than WhatsApp button */
+  }
