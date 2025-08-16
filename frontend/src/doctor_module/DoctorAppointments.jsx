@@ -24,9 +24,9 @@ function DoctorAppointments() {
   const [acceptedAppointments, setAcceptedAppointments] = useState([]);
 
   // Complete appointment popup state
-  const [showCompleteForm, setShowCompleteForm] = useState(false);
+  // const [showCompleteForm, setShowCompleteForm] = useState(false);
   // const [completeRemarks, setCompleteRemarks] = useState('');
-  const [completeId, setCompleteId] = useState(null);
+  // const [completeId, setCompleteId] = useState(null);
 
   useEffect(() => {
     axios.get(`http://localhost:8000/api/appointments/doctor/${doctorId}`)
@@ -63,7 +63,6 @@ function DoctorAppointments() {
         });
     }
 
-<<<<<<< HEAD
     // Complete appointment handler - immediately update status in DB
     function handleCompleteClick(id, status) {
       if (status === 'completed') {
@@ -79,30 +78,24 @@ function DoctorAppointments() {
             alert('Error completing appointment: ' + (err.response?.data?.error || err.message));
           });
       }
-=======
-    // Complete appointment handler
-    function handleCompleteClick(id,status) {
-       status === 'completed' ? setCompleteId(id) : null;
-      setShowCompleteForm(true);
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
     }
 
-    function submitCompleteForm(e) {
-      e.preventDefault();
-      axios.put(`http://localhost:8000/api/appointments/${completeId}/respond`, {
-        status: 'completed',
-        doctorId
-      })
-        .then(res => {
-          alert(res.data.msg || 'Appointment marked as complete!');
-          setShowCompleteForm(false);
-          setCompleteId(null);
-          window.location.reload();
-        })
-        .catch((err) => {
-          alert('Error completing appointment: ' + (err.response?.data?.error || err.message));
-        });
-    }
+    // function submitCompleteForm(e) {
+    //   e.preventDefault();
+    //   axios.put(`http://localhost:8000/api/appointments/${completeId}/respond`, {
+    //     status: 'completed',
+    //     doctorId
+    //   })
+    //     .then(res => {
+    //       alert(res.data.msg || 'Appointment marked as complete!');
+    //       setShowCompleteForm(false);
+    //       setCompleteId(null);
+    //       window.location.reload();
+    //     })
+    //     .catch((err) => {
+    //       alert('Error completing appointment: ' + (err.response?.data?.error || err.message));
+    //     });
+    // }
 
 
   const cardStyle = {
@@ -134,12 +127,6 @@ function DoctorAppointments() {
     backgroundColor: 'rgba(40, 167, 69, 0.1)'
   };
   
-  const pastStyle = {
-    ...appointmentCardStyle,
-    borderLeft: '4px solid #6c757d',
-    backgroundColor: 'rgba(108, 117, 125, 0.05)',
-    opacity: '0.8'
-  };
   
   const urgentStyle = {
     ...appointmentCardStyle,
@@ -261,79 +248,8 @@ function DoctorAppointments() {
     </div>
   ))}
           </div>
-<<<<<<< HEAD
         </div>        
       </div>
-=======
-        </div>
-
-        {/* Right Column - Actions and Stats */}
-        
-      </div>
-    {/* Complete Appointment Popup */}
-    {showCompleteForm && (
-      <div
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          zIndex: 2000,
-        }}
-      >
-        <form
-          onSubmit={submitCompleteForm}
-          style={{
-            width: '1000px',
-            padding: '30px',
-            borderRadius: '15px',
-            background: 'rgba(255, 255, 255, 0.15)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
-            color: '#fff',
-          }}
-        >
-          <h4 style={{ marginBottom: '20px', textAlign: 'center' }}>Complete Appointment</h4>
-          <PrescriptionForm onClose={() => setShowCompleteForm(false)} />
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <button
-              type="submit"
-              style={{
-                background: 'rgba(255, 255, 255, 0.3)',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                color: '#fff',
-              }}
-            >
-              Submit
-            </button>
-            <button
-              type="button"
-              onClick={() => setShowCompleteForm(false)}
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: 'none',
-                padding: '10px 20px',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                color: '#fff',
-              }}
-            >
-              Close
-            </button>
-          </div>
-        </form>
-      </div>
-    )}
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
   </div>
   );
 }

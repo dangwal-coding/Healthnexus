@@ -122,18 +122,11 @@ function Home() {
                                     </div>
                                 </div>
                                  <div className='col-lg-3 col-md-4'>
-<<<<<<< HEAD
                                     <Link to={'/find-doctor'} className='text-decoration-none'>
                                     <div className='h-100 rounded d-flex align-items-center justify-content-center text-white fw-bold'
                                         style={{ backgroundColor: '#0b8aa3ff', minHeight: '70px', borderRadius: '0 0.25rem 0.25rem 0', fontSize: '20px' }}>
                                         Book an Appointment
                                     </div> </Link>
-=======
-                                    <div className='h-100 rounded d-flex align-items-center justify-content-center text-white fw-bold'
-                                        style={{ backgroundColor: '#0b8aa3ff', minHeight: '70px', borderRadius: '0 0.25rem 0.25rem 0', fontSize: '20px' }}>
-                                        Book an Appointment
-                                    </div>
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                                 </div>
                             </div>
                         </div>
@@ -240,11 +233,7 @@ function Home() {
 
             <div className="departments-bg py-5">
                 <div className="container text-center">
-<<<<<<< HEAD
                     <h2 className="mb-4 text-dark">OUR FACILITIES</h2>
-=======
-                    <h2 className="mb-4 text-dark">OUR FACALITIES</h2>
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                     <div className="d-flex justify-content-center flex-wrap gap-3">
                         <div className="card department-card px-3 py-4">
                             <a href="" className='facalities-a-tag'>

@@ -5,20 +5,12 @@ import { useNavigate,Link } from 'react-router-dom';
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-<<<<<<< HEAD
   const [loginType, setLoginType] = useState("patient");
   const navigate = useNavigate();
   async function handlesubmit(e) {
     e.preventDefault();
   const user = { email, password, type: loginType };
   const response = await axios.post('http://localhost:8000/api/users/login', user);
-=======
-  const navigate = useNavigate();
-  async function handlesubmit(e) {
-    e.preventDefault();
-    const user = { email, password };
-    const response = await axios.post('http://localhost:8000/api/users/login', user);
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
     const data = response.data;
     if (data.msg === "success") {
 
@@ -61,7 +53,6 @@ function LoginForm() {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" placeholder="Password" style={{ fontWeight: 200 }} />
         </div>
 
-<<<<<<< HEAD
         <div className="mb-3">
           <label className="form-label">Login Type</label>
           <select className="form-select" aria-label="Login Type" value={loginType} onChange={e => setLoginType(e.target.value)}>
@@ -71,8 +62,6 @@ function LoginForm() {
           </select>
         </div>
 
-=======
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
         <div className="d-flex justify-content-between mb-3">
           <div className="form-check">
             <input className="form-check-input" type="checkbox" id="rememberMe" />

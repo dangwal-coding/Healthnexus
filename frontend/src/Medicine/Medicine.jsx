@@ -19,16 +19,12 @@ import shop from '../assets/shop.webp'
 import health from '../assets/health.svg'
 import medicine from '../assets/medicine.svg'
 import doctor from '../assets/doctor.svg'
-<<<<<<< HEAD
 import { loadStripe } from '@stripe/stripe-js';
 
-=======
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 
 export default function Medicine() {
   const [query, setQuery] = useState('')
   const [medicines, setMedicines] = useState([]);
-<<<<<<< HEAD
   const [showModal, setShowModal] = useState(false);
 const [selectedMedicine, setSelectedMedicine] = useState(null);
 const [formData, setFormData] = useState({
@@ -80,8 +76,6 @@ const handleCheckout = async () => {
   }
 };
 
-=======
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 
   useEffect(() => {
     async function fetchMedicineData() {
@@ -271,12 +265,8 @@ const handleCheckout = async () => {
                         <small className="text-success">{med.turnaround} turnaround</small>
                       </div>
                       <div>
-<<<<<<< HEAD
                         <button className="btn btn-sm btn-primary" onClick={() => openCheckoutModal(med)}>Buy</button>
 
-=======
-                        <button className="btn btn-sm btn-primary">Buy</button>
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                       </div>
                     </div>
                   </div>
@@ -374,7 +364,6 @@ const handleCheckout = async () => {
       {/* -------------------------------------------- Carousel Section End ------------------------------------------------------------- */}
 
 
-<<<<<<< HEAD
 {showModal && (
   <div className="modal fade show d-block" tabIndex="-1" style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
     <div className="modal-dialog">
@@ -409,8 +398,6 @@ const handleCheckout = async () => {
     </div>
   </div>
 )}
-=======
->>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 
 
       <Footer />
