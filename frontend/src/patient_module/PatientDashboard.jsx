@@ -126,7 +126,11 @@ function PatientDashboard() {
             <div className="row align-items-center">
               <div className="col-md-8">
                 <div className="d-flex align-items-center">
+<<<<<<< HEAD
                 <img src={user?.image? `http://localhost:8000/image/users/${user.image}`: "http://localhost:8000/image/users/pati.jpeg" }alt={user?.fullName || "Doctor"}style={profileImageStyle}className="me-4"/>
+=======
+                <img src={user?.image? `http://localhost:8000/image/users/${user.image}`: "/placeholder.png" }alt={user?.fullName || "Doctor"}style={profileImageStyle}className="me-4"/>
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                   <div>
                     <h2 className="mb-2">Welcome back {user.fullName} </h2>
                     <p className="mb-1 opacity-75">Patient ID: {(user._id).slice(-8)}</p>

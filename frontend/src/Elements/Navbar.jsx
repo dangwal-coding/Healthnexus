@@ -21,7 +21,11 @@ function Navbar() {
         localStorage.setItem('role', '');
     };
     const handleViewProfile = () => {
+<<<<<<< HEAD
         const role = sessionStorage.getItem('userType');
+=======
+        const role = localStorage.getItem('role');
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
         if (role === 'admin') {
             navigate('/admin');
         } else if (role === 'patient') {
@@ -47,7 +51,11 @@ function Navbar() {
                         {/* Logo section */}
                         <Link to={'/'}>
                             <div className="navbar-brand d-flex align-items-center">
+<<<<<<< HEAD
                                 {/* <img src='./src/assets/images/logomain.png' alt="Logo" className="me-2" style={{ height: '50px', width: '50px' }} /> */}
+=======
+                                <img src='./src/assets/images/logomain.png' alt="Logo" className="me-2" style={{ height: '50px', width: '50px' }} />
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                                 <img src={brandImages.logo} alt="Logo GIF" style={{ height: '40px', width: '183px' ,borderRadius:'55px'}} />
                             </div>
                         </Link>
@@ -85,7 +93,11 @@ function Navbar() {
 
                                 </li>
                                 <li className="nav-item">
+<<<<<<< HEAD
                                     <Link to={'/blog'} className="nav-link text-primary fw-semibold">Blogs</Link>
+=======
+                                    <Link className="nav-link text-primary fw-semibold" to="">Blogs</Link>
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                                 </li>
                                 <li className='nav-item'>
                                     {isLoggedIn ? (

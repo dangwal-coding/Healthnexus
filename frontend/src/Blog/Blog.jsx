@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 import { Container, Button, Row, Col, Card } from 'react-bootstrap';
+=======
+import { Container, Nav, Navbar, Button, Row, Col, Card } from 'react-bootstrap';
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 import { Link } from 'react-router-dom'
 import b1 from '../assets/images/blog1.png';
 import b2 from '../assets/images/blog2.png';
 import b3 from '../assets/images/blog3.png';
 import b4 from '../assets/images/blog4.png';
+<<<<<<< HEAD
 import Navbar from "../Elements/Navbar";
 import Footer from "../Elements/Footer";
+=======
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 
 function Blogs() {
     return (
       <>
+<<<<<<< HEAD
       <Navbar />
+=======
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
         <Container>
           <Card className="p-4 d-flex flex-md-row align-items-center #f1f3fb' border-0">
           <Col md={7}>
@@ -217,7 +227,11 @@ function Blogs() {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
    <Footer />
+=======
+
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
 
       </>
     )

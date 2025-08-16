@@ -67,10 +67,18 @@ export default function AppointmentPage() {
           console.error(err);
           alert("Failed to create appointment");
         } finally {
+<<<<<<< HEAD
           // Only clear appointmentForm and appointmentSubmitted, not selectedDoctor
           sessionStorage.removeItem("appointmentForm");
           sessionStorage.removeItem("appointmentSubmitted"); 
           window.history.replaceState({}, document.title, "/find-doctor");
+=======
+          sessionStorage.removeItem("selectedDoctor");
+          sessionStorage.removeItem("appointmentForm");
+          sessionStorage.removeItem("appointmentSubmitted"); 
+          window.history.replaceState({}, document.title, "/find-doctor");
+         
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
         }
       };
 
@@ -219,12 +227,20 @@ export default function AppointmentPage() {
                       }}
                     >
                       <h3 style={{ marginBottom: "20px", textAlign: "center" }}>
+<<<<<<< HEAD
                           Confirmation
+=======
+                        Book Appointment with {selectedDoctor.fullName}
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                       </h3>
 
                       {appointmentSent ? (
                         <p style={{ textAlign: "center", fontWeight: "bold", color: "#0f0" }}>
+<<<<<<< HEAD
                           Appointment request sent ✅ to the doctor. You will receive a confirmation soon.
+=======
+                          Appointment request sent ✅
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                         </p>
                       ) : (
                         <form onSubmit={handleSubmit}>
@@ -286,7 +302,11 @@ export default function AppointmentPage() {
                       src={
                         selectedDoctor?.image
                           ? `http://localhost:8000/image/users/${selectedDoctor.image}`
+<<<<<<< HEAD
                           : "http://localhost:8000/image/users/doctor.jpg"
+=======
+                          : "/placeholder.png"
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
                       }
                       alt={selectedDoctor?.fullName || "Doctor"}
                       className="rounded-circle shadow-sm border"

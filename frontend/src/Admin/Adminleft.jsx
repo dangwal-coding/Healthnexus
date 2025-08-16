@@ -60,6 +60,17 @@ function Adminleft() {
             Chatbot
           </Link>
         </li>
+<<<<<<< HEAD
+=======
+        <li
+          style={{ padding: '12px 0', textAlign: 'center', borderRadius: '8px', marginBottom: '8px', background: 'rgba(255,255,255,0.05)', cursor: 'pointer', transition: 'background 0.2s' }}
+          onClick={() => localStorage.setItem('role', 'admin')}
+        >
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'none', display: 'block' }}>
+            Home
+          </Link>
+        </li>
+>>>>>>> 8c7828a8cf0c860ce8632ae356dd20e5ac1d8317
       </ul>
       {/* Footer */}
       <div style={{
