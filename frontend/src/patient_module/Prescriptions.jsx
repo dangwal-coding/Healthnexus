@@ -43,7 +43,7 @@ function Prescriptions() {
 
   const activePrescriptionStyle = {
     ...prescriptionCardStyle,
-    borderLeft: '4px solid #28a745',
+    borderLeft: '4px solid #3ece60ff',
     backgroundColor: '#f8fff9'
   };
 
