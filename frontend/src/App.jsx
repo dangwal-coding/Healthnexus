@@ -1,12 +1,11 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Footer from './Elements/Footer'
 import Home from './Components/Home'
 import Authpage from './Components/Authpage'
 import BMIcalculator from './Components/BMIcalculator'
 import BodyFatcalculator from './Components/BodyFatcalculator'
-import Navbar from './Elements/Navbar'
 import Doctormain from './doctor_module/Doctormain'
 import DoctorDashboard from './doctor_module/DoctorDashboard'
 import DoctorRecords from './doctor_module/DoctorRecords'
@@ -35,6 +34,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <HideNavbarOnDashboards />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Authpage />} />
@@ -84,6 +84,25 @@ function App() {
       </BrowserRouter>
     </>
   )
+}
+
+// Inject CSS to hide any Navbar on doctor/patient routes
+function HideNavbarOnDashboards() {
+  const location = useLocation();
+  const hide =
+    location.pathname.startsWith('/patientlogin') ||
+    location.pathname.startsWith('/doctor-login');
+
+  if (!hide) return null;
+
+  return (
+    <style>
+      {`
+        /* Hide common navbar containers on dashboard routes */
+        .navbar, header nav, .app-navbar { display: none !important; }
+      `}
+    </style>
+  );
 }
 
 export default App
